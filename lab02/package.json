@@ -1,0 +1,15 @@
+{
+  "name": "lab02",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node app.js",
+    "server": "node server.js",
+    "sys": "node sysinfo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
