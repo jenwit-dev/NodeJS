@@ -1,6 +1,5 @@
 // const utils = require("./utils");
 const { info, cc: codecamp } = require("./utils");
-
 // console.log(utils);
 // console.log(utils.random());
 // console.log(utils.sysInfo());

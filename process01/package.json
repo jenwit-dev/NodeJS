@@ -1,0 +1,15 @@
+{
+  "name": "process01",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chalk": "^4.1.2"
+  }
+}
