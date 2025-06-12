@@ -8,6 +8,15 @@ let thePath = __dirname + "/go/to/test.txt";
 // console.log(path.dirname(thePath));
 // console.log(path.basename(thePath));
 // console.log(path.extname(thePath));
+
+// console.log(path.join("public", "data", "user"));
+
+// console.log(path.dirname(__dirname));
+
+// console.log(path.resolve()); // return working dir
+// console.log(__dirname); // return working dir
+// console.log(process.cwd()); // return working dir
+
 // console.log(path.join(__dirname, "data", "user"));
 // console.log(path.resolve());
 // console.log(path.resolve("data", "user"));
