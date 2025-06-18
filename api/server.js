@@ -27,6 +27,15 @@ function httpHandler(req, res) {
     res.writeHead(200, { "content-type": "application/json" });
     res.write(JSON.stringify(data));
     return res.end();
+  } else if (req.url.match(/\/todo\/\d+/g)) {
+    // console.log(req.url);
+    let index = +req.url.split("/")[2];
+    // console.log(index);
+    res.writeHead(200, { "content-type": "application/json" });
+    if (index > data.length - 1 || index < 0)
+      return res.end(JSON.stringify({ msg: "no data" }));
+    res.write(JSON.stringify({ msg: data[index] }));
+    return res.end();
   } else {
     res.writeHead(404, { "content-type": "application/json" });
     res.write(JSON.stringify({ msg: "Not found" }));
@@ -54,4 +63,5 @@ function httpHandler(req, res) {
 
 const server = http.createServer(httpHandler);
 
-server.listen(process.env.PORT, () => console.log("server ready"));
+const port = process.env.PORT || 8000;
+server.listen(port, () => console.log("server ready on port : ", port));
